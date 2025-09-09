@@ -1,0 +1,5 @@
+Python
+Pandas, NumPy
+Matplotlib, Seaborn
+Statsmodels (ARIMA)
+Jupyter Notebook
