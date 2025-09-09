@@ -1,100 +1,112 @@
 # Dengue Outbreak Forecasting
 
-This is **Project 3 given by GUVI – HCL** as part of the Data Analytics learning program.
-The project focuses on forecasting dengue cases using statistical models and climate variables.
-By predicting dengue outbreaks in advance, health authorities can take preventive measures and reduce the impact on communities.
+This project was developed as **Project 3 under the GUVI – HCL Data Analytics Program**.  
+It focuses on forecasting dengue cases using statistical models and climate variables.  
+By predicting outbreaks in advance, health authorities can plan preventive measures and reduce the impact on communities.
 
 ---
 
-## Objectives
+**Objectives**
 
-1. Collect and clean dengue and climate data.
-2. Convert daily data into weekly summaries for better analysis.
-3. Explore the relationship between rainfall, temperature, humidity, and dengue cases.
-4. Build an ARIMA model that uses both past cases and climate factors.
-5. Forecast dengue cases for the upcoming weeks.
-
----
-
-## Data Sources
-
-* **Dengue data**: NVBDCP or IDSP reports.
-* **Climate data**: IMD or ERA5 datasets.
-* Data was preprocessed into weekly form for modeling.
+1. Collect and clean dengue and climate data.  
+2. Convert daily records into weekly summaries for analysis.  
+3. Study the relationship between rainfall, temperature, humidity, and dengue cases.  
+4. Build an ARIMA model that leverages both past cases and climate factors.  
+5. Forecast dengue cases for the upcoming weeks.  
 
 ---
 
-## Methodology
+**Data Sources**
 
-1. Data collection and cleaning.
-2. Weekly aggregation of dengue and climate data.
-3. Correlation study between weather and dengue outbreaks.
-4. Model building using ARIMA with external climate inputs.
-5. Model validation with RMSE and MAE.
-6. Forecasting for the next 12 weeks.
+- **Dengue data**: NVBDCP or IDSP reports.  
+- **Climate data**: IMD or ERA5 datasets.  
+- Data was preprocessed into weekly form for modeling.  
 
 ---
 
-## Repository Structure
+**Methodology**
 
-```
+1. Data collection and cleaning.  
+2. Weekly aggregation of dengue and climate data.  
+3. Correlation analysis between climate factors and dengue outbreaks.  
+4. Model building using ARIMA with external climate inputs.  
+5. Model validation using RMSE and MAE.  
+6. Forecasting dengue cases for the next 12 weeks.  
+
+---
+
+**Repository Structure**
+
+
+
 dengue-forecasting/
 │
-├── data_raw/                        
-├── data_processed/                  
-├── figures/                         
-├── notebooks/                       
-├── presentation/                    
+├── data\_raw/
+├── data\_processed/
+├── figures/
+├── notebooks/
+├── presentation/
 │   └── dengue-outbreak-forecasting.pdf
-├── .gitignore                       
-├── LICENSE                          
-├── README.md                        
+├── .gitignore
+├── LICENSE
+├── README.md
 └── requirements.txt
+
+`
+
 ---
 
-## How to Run
+**How to Run**
 
-1. Clone the repository:
-   `git clone https://github.com/<your-username>/dengue-forecasting.git`
+1. Clone the repository:  
+   bash
+   git clone https://github.com/<your-username>/dengue-forecasting.git
+`
 
 2. Install dependencies:
-   `pip install -r requirements.txt`
+
+   bash
+   pip install -r requirements.txt
+   
 
 3. Open and run the notebook:
-   `jupyter notebook notebooks/Dengue_Forecasting.ipynb`
 
-4. Outputs available after running:
+   bash
+   jupyter notebook notebooks/Dengue_Forecasting.ipynb
+   
 
-   * weekly\_national\_summary.csv
-   * forecast\_national.csv
-   * forecast\_plot.png
-   * correlation\_heatmap.png
+4. Outputs generated after running:
 
----
-
-## Results
-
-* Validation RMSE: 10.07
-* Validation MAE: 7.96
-* Dengue cases rise during monsoon and post-monsoon weeks.
-* Rainfall and humidity are strongly related to case surges.
-* The ARIMA model provides reasonable short-term forecasts.
+   * `weekly_national_summary.csv`
+   * `forecast_national.csv`
+   * `forecast_plot.png`
+   * `correlation_heatmap.png`
 
 ---
 
-## Limitations
+**Results**
 
-* Only historical case and climate data were used.
-* ARIMA may not capture sudden outbreaks caused by external events.
-* District-level granularity is still under development.
+* Validation RMSE: **10.07**
+* Validation MAE: **7.96**
+* Dengue cases increase during monsoon and post-monsoon weeks.
+* Rainfall and humidity are strongly correlated with case surges.
+* The ARIMA model provides reliable short-term forecasts.
 
 ---
 
-## Future Scope
+**Limitations**
 
-* Automating weekly updates with live data.
-* Adding district-wise forecasting.
-* Creating a dashboard for real-time use by health departments.
+* Only historical case and climate data were considered.
+* ARIMA may not capture sudden outbreaks triggered by external factors.
+* District-level forecasting is still under development.
+
+---
+
+**Future Scope**
+
+* Automating weekly updates with live data sources.
+* Incorporating district-level forecasting.
+* Developing an interactive dashboard for health departments.
 
 ---
 
