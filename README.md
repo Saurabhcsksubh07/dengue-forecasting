@@ -40,21 +40,16 @@ By predicting dengue outbreaks in advance, health authorities can take preventiv
 ```
 dengue-forecasting/
 │
-├── notebooks/
-│   Dengue_Forecasting.ipynb     → Jupyter notebook with all steps
-│
-├── data_processed/
-│   weekly_national_summary.csv  → processed weekly dataset
-│   forecast_national.csv        → model forecast results
-│
-├── figures/
-│   forecast_plot.png            → forecast visualization
-│   correlation_heatmap.png      → relation between dengue and climate
-│
-├── requirements.txt             → required Python libraries
-└── README.md
-```
-
+├── data_raw/                        
+├── data_processed/                  
+├── figures/                         
+├── notebooks/                       
+├── presentation/                    
+│   └── dengue-outbreak-forecasting.pdf
+├── .gitignore                       
+├── LICENSE                          
+├── README.md                        
+└── requirements.txt
 ---
 
 ## How to Run
